@@ -1,2 +1,2 @@
 # dwei_local
-this is a personal repo 
+This is a personal repo.
