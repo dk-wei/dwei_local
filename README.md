@@ -1,2 +1,2 @@
 # dwei_local
-This is a personal repo.
+This is my locl personal repo.

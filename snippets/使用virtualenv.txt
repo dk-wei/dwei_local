@@ -1,0 +1,9 @@
+create virtual env: 
+
+/Users/dwei/Library/Python/3.8/bin/virtualenv myenv
+
+activate:
+source myenv/bin/activate
+
+
+然后在ide中，最好是在myenv这一个级别进行操作
