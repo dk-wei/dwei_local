@@ -16,6 +16,8 @@ dist/
 # Log files
 *.log
 
+*.py
+
 # Package files
 *.jar
 
@@ -58,4 +60,3 @@ Thumbs.db
 # 不上传任何带credential的代码
 **/secret.*
 
-*.py
