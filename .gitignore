@@ -59,4 +59,4 @@ Thumbs.db
 *secret.*
 
 # 不上传任何credentials
-credentials.yml
+credentials
