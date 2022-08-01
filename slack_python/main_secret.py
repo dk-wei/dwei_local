@@ -7,7 +7,7 @@ import random
 import requests
 if __name__ == '__main__':
     #url = "<Webhook_URL>"
-    slack_incoming_webhook_url = <your webhook url>
+    slack_incoming_webhook_url = "https://hooks.slack.com/services/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"
 
     with open('msg_builder.json', 'r') as myfile:
         data=myfile.read()
@@ -17,6 +17,6 @@ if __name__ == '__main__':
     byte_length = str(sys.getsizeof(slack_data))
     headers = {'Content-Type': "application/json", 'Content-Length': byte_length}
     response = requests.post(slack_incoming_webhook_url, data=json.dumps(slack_data), headers=headers)
-
+    
     if response.status_code != 200:
         raise Exception(response.status_code, response.text)

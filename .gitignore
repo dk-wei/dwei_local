@@ -54,3 +54,6 @@ Thumbs.db
 
 # 乱七八糟，注意gitignore需要放在最高级
 乱七八糟.*
+
+# 不上传任何带credential的代码
+_secret*
