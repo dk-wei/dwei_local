@@ -57,3 +57,5 @@ Thumbs.db
 
 # 不上传任何带credential的代码
 *secret.*
+
+*.yaml
