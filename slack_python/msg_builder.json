@@ -1,0 +1,19 @@
+{
+    "username": "NotificationBot",
+    "icon_emoji": ":jack_o_lantern:",
+    "--channel" : "#somerandomcahnnel     # you can find the personal channel id in the profile",
+    "--channel" : "D03NYGVT8R2",   
+    
+    "attachments": [
+        {
+            "color": "#9733EE",
+            "fields": [
+                {
+                    "title": "New Incoming Message :zap:",
+                    "value": "Hi, this is a msg bot created by Dave.",
+                    "short": "false"
+                }
+            ]
+        }
+    ]
+}

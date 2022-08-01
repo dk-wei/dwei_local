@@ -1,0 +1,19 @@
+{
+    "username": "NotificationBot",
+    "icon_emoji": ":jack_o_lantern:",
+    //"channel" : "#somerandomcahnnel",
+    //"channel" : "D03NYGVT8R2",   # you can find the channel id in the profile
+
+    "attachments": [
+        {
+            "color": "#9733EE",
+            "fields": [
+                {
+                    "title": title,
+                    "value": message,
+                    "short": "false",
+                }
+            ]
+        }
+    ]
+}
