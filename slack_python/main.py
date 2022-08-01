@@ -5,9 +5,11 @@ import json
 import sys
 import random
 import requests
+import yaml
+
 if __name__ == '__main__':
-    #url = "<Webhook_URL>"
-    slack_incoming_webhook_url = <your webhook url>
+    with open('../credentials/credentials.yml', 'r') as file:
+        slack_incoming_webhook_url = yaml.safe_load(file)['slack_python']['webhook']
 
     with open('msg_builder.json', 'r') as myfile:
         data=myfile.read()
