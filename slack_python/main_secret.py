@@ -7,8 +7,7 @@ import random
 import requests
 if __name__ == '__main__':
     #url = "<Webhook_URL>"
-    slack_incoming_webhook_url = "https://hooks.slack.com/services/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"
-
+    slack_incoming_webhook_url = <your hook_url>
     with open('msg_builder.json', 'r') as myfile:
         data=myfile.read()
 
