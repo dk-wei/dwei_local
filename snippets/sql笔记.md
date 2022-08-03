@@ -1,0 +1,1 @@
+- `from` 和 `where`一定要specify schemas/table, `select`和`group by`不需要加
