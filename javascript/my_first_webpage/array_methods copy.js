@@ -1,5 +1,5 @@
 // Basic Array Methods
-let arr = []
+let arr_empty = []
 var arr = ["a", "b", 1, "d", "e", "f"]
 
 
