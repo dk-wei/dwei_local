@@ -1,4 +1,5 @@
 // Basic Array Methods
+let arr = []
 var arr = ["a", "b", 1, "d", "e", "f"]
 
 
