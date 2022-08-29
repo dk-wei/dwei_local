@@ -88,3 +88,86 @@ for (const element of arr) {
 
 console.log(count); // 👉️ {a: 3, b: 1, c: 2}
 ```
+
+- 对array进行slice
+
+```javascript
+    let firstHalf = nString.slice(0,length/2).split('')   //前半拉
+    let sectHalf = nString.slice(length/2).split('')    // 后半拉
+```
+
+
+- 对array每一个item进行操作
+
+注意，不能使用`forEach`, 因为这玩意儿不返回任何东西，但是map可以返回
+```javascript
+firstHalf = firstHalf.map(x => Number(x));
+```
+
+- 对array进行累加
+
+  1. 使用`lodash`
+  ```javascript
+  var lodash = require('lodash');
+  var arr = [3, 6, 1, 5, 8];
+  var sum = lodash.sum(arr);
+  console.log(sum); 
+  ```
+
+  2. 使用`reduce`
+  ```javascript
+  const arr = [1, 2, 3, 4];
+  const reducer = (accumulator, curr) => accumulator + curr;
+  console.log(arr.reduce(reducer));
+  ```
+
+
+- 对array进行排序
+```javascript
+array.sort((a, b) =>  a - b).reverse()
+```
+
+- 创建一个同元素array
+
+`array = Array(5).fill("*").join("")`
+
+
+- array里面swap elements
+
+```javascript
+let swapArrayElements = function(arr, a, b) {
+  let temp = arr[a];  //还是要先创建temp指针
+  arr[a] = arr[b];
+  arr[b] = temp;
+```
+
+- 比较两个array
+
+`a.join("") === b.join("")  // 两个array不能直接比较，只能先转变成string`
+
+- array添加新元素
+
+```javascript
+let array = ['red', 'green', 'blue']
+array[4] = 'purple' // 牛逼，可以直接按照index添加元素，这点比python都强
+
+
+```
+
+- object
+
+看起来类似python的dictionary，但是在js里面叫object，但是功能类似，注意keys不叫引号。
+  ```javascript
+  Object.keys(student)   //查看keys
+  Object.values(student) //查看values
+  let me = Object.create(student)   //根据已有的object创建新object，类似继承的概念
+
+  for (key in students) {blah}   //遍历keys
+  ```
+
+  - JSON
+  
+  ```javascript
+  const jsonFile = JSON.stringify(myObject);
+  const parsedJson = JSON.parse(jsonFile);
+  ```
